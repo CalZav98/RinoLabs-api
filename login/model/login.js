@@ -69,7 +69,7 @@ export const login = async (data) => {
       ),
       httpOnly: true, // Evita que la cookie sea accesible desde el cliente
       secure: process.env.NODE_ENV === "production", // Asegura que la cookie solo se envíe a través de HTTPS en producción
-      sameSite: "Strict", // Protege contra ataques CSRF (Cross-Site Request Forgery)
+      sameSite: "None", // Protege contra ataques CSRF (Cross-Site Request Forgery)
     };
 
     return {
