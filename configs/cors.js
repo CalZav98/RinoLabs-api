@@ -2,7 +2,7 @@ import cors from "cors";
 
 const ORIGINS = [
   "http://localhost:5173",
-  "https://rino-labs.vercel.app/",
+  "https://rino-labs.vercel.app",
 ];
 
 export const corsMiddleware = ({ acceptedOrigins = ORIGINS } = {}) =>
